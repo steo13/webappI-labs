@@ -22,25 +22,37 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-lg justify-content-between navbar-dark bg-success">
+                <div class="dropdown d-block d-sm-none">
+                    <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="true">
+                          Menu
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">All</a></li>
+                        <li><a class="dropdown-item" href="#">Important</a></li>
+                        <li><a class="dropdown-item" href="#">Today</a></li>
+                        <li><a class="dropdown-item" href="#">Next 7 Days</a></li>
+                        <li><a class="dropdown-item" href="#">Private</a></li>
+                    </ul>
+                </div>
                 <div>
                     <a class="navbar-brand" title="ToDo Manager" href="#">
-                        <img src="logo.png" alt="" width="36" height="32" class="d-inline-block mx-auto">
+                        <img src="https://raw.githubusercontent.com/steo13/webappI-labs/main/lab2/logo.png" alt="" width="36" height="32" class="d-inline-block mx-auto">
                         ToDo Manager
                     </a>
                 </div>
-                <div>
+                <div class="display d-none d-sm-block">
                     <input class="form-control me-2 align-center" type="search" placeholder="Search" aria-label="Search">
                 </div>
                 <div>
                     <a class="navbar-brand" title="User" href="#">
-                        <img src="user.png" alt="" width="32" height="32" class="d-inline-block mx-auto">
+                        <img src="https://raw.githubusercontent.com/steo13/webappI-labs/main/lab2/user.png" alt="" width="32" height="32" class="d-inline-block mx-auto">
                     </a>
                 </div>
             </nav>
         </header>
         <main>
             <div class="row">
-                <div class="container-fluid col-4">
+                <div class="container-fluid col-4 d-none d-sm-block">
                     <div class="float-sm-start">
                         <ul class="list-group-flush mt-3">
                             <li class="list-group-item list-group-item-success list-group-item-action active bg-success" aria-current="true">All</li>
@@ -51,7 +63,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-3 mr-3 ml-3">
                     <h1>All</h1>
                     <div class="list-group-flush">
                         <label class="list-group-item">
@@ -72,7 +84,7 @@
                                     Buy some groceries
                                 </div>
                                 <div>
-                                    <img src="user.png" title="Pubblic" alt="" width="32" height="32" class="d-inline-block mx-auto">
+                                    <img src="https://raw.githubusercontent.com/steo13/webappI-labs/main/lab2/user.png" title="Pubblic" alt="" width="32" height="32" class="d-inline-block mx-auto">
                                 </div>
                                 <div>
                                     Today at 14:00
