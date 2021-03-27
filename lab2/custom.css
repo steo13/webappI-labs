@@ -1,6 +1,7 @@
 body{
     background-color: white;
 }
+
 .footer{
     position: absolute;
     bottom: 0;
@@ -8,5 +9,9 @@ body{
 
 main{
     background-color: white;
+}
+
+.list-group{
+    list-group-active-bg: green;
 }
 
