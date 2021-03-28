@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+
+<html lang="it">
+    <head>
+        <!--Metadati richiesti per l'importazione di bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        
+        <!--CSS personalizzato-->
+        <link rel="stylesheet" href="https://github.com/steo13/webappI-labs/blob/main/lab3/custom.css">
+        <!--<link rel="stylesheet" href="custom.css">-->
+
+        <!--Ulteriori meta tags-->
+        <meta name="description" content="esami">
+        <meta name="author" content="aw1-mz-2021">
+
+        <!--script javascsript opzionali-->
+        <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    
+        <!-- day.js-->
+        <script defer src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+        <!-- Custom JS -->
+        <script defer src="https://github.com/steo13/webappI-labs/blob/main/lab3/lab3.js"></script>
+        <!--<script defer src="lab3.js"></script>-->
+
+        <title>To Do Manager</title> 
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg justify-content-between navbar-dark bg-success">
+                <div class="dropdown d-block d-sm-none">
+                    <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" id="all1">All</a></li>
+                        <li><a class="dropdown-item" id="important1">Important</a></li>
+                        <li><a class="dropdown-item" id="today1">Today</a></li>
+                        <li><a class="dropdown-item" id="next-71">Next 7 Days</a></li>
+                        <li><a class="dropdown-item" id="private1">Private</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="navbar-brand" title="ToDo Manager" href="#">
+                        <img src="https://raw.githubusercontent.com/steo13/webappI-labs/main/lab2/logo.png" alt="" width="36" height="32" class="d-inline-block mx-auto">
+                        ToDo Manager
+                    </a>
+                </div>
+                <div class="display d-none d-sm-block">
+                    <input class="form-control me-2 align-center" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <div>
+                    <a class="navbar-brand" title="User" href="#">
+                        <img src="https://raw.githubusercontent.com/steo13/webappI-labs/main/lab2/user.png" alt="" width="32" height="32" class="d-inline-block mx-auto">
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="row" style="min-height: 100vh;">
+                <div class="container-fluid col-4 d-none d-sm-block" style="background-color: rgb(226, 226, 226);">
+                    <div class="float-sm-start ml-3">
+                        <div class="list-group list-group-flush mt-3 ml-3" role="tablist">
+                            <a class="list-group-item list-group-item-action active" data-bs-toggle="list" role="tab" id="all2">All</a>
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab" id="important2">Important</a>
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab" id="today2">Today</a>
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab" id="next-72">Next 7 Days</a>
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab" id="private2">Private</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-3 mr-3 ml-3">
+                    <h1 id="task-title"></h1>
+                    <div class="list-group-flush" id="task-list">
+                    </div>    
+                </div>
+            </div>       
+        </main>
+        <footer class="container-fluid" style="position: absolute; bottom: 0;">
+            <div class="d-flex justify-content-end mb-3"> 
+                <div>
+                    <button type="button" class="btn btn-success" data-bs-toggle="button" autocomplete="off">+</button>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
