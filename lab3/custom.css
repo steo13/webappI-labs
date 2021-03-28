@@ -1,0 +1,21 @@
+body{
+    background-color: white;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+
+main{
+    background-color: white;
+}
+
+.list-group-item.active {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+    background-color: #28a745;
+}
