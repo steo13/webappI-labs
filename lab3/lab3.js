@@ -89,7 +89,7 @@ function createTaskRow(task){
         description = `<p class="text-danger"><b>${task.description}</b></p>`;
 
     if (task.pubblic == true)
-        pubblic = `<div><img src="https://raw.githubusercontent.com/steo13/webappI-labs/main/lab2/user.png" title="Pubblic" alt="" width="32" height="32" class="d-inline-block mx-auto"></div>`;
+        pubblic = `<div><img src="png/user.png" title="Pubblic" alt="" width="32" height="32" class="d-inline-block mx-auto"></div>`;
 
     return `<label class="list-group-item">
             <div class="d-flex justify-content-between">
